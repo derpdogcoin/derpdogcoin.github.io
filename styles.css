@@ -1,0 +1,551 @@
+body, html {
+    height: 100%;
+    font-family: 'Bangers', cursive;
+    margin: 0;
+    padding: 0;
+    background-color: #fafafa;
+  }
+  
+  #page-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    padding-bottom: 100px;
+    background-image: linear-gradient(#000, #fafafa);
+  }
+
+  .logo-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .logo {
+    max-width: 100px;
+    max-height: 100px;
+    border-radius: 10px;
+  }
+  
+  .logo-text {
+    font-family: 'Darumadrop One', cursive;
+    font-size: 5rem;
+    font-weight: bold;
+    color: #fff;
+    margin: 0;
+  }
+
+  nav {
+    font-size: 2rem;
+    display: flex;
+    gap: 1.2rem;
+    margin-left: -400px;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  nav a:hover {
+    text-decoration: underline;
+  }
+  
+  .buy-now {
+    background-image: linear-gradient(45deg, #03E1FF, #DC1FFF);
+    font-size: 2rem;
+    color: #ffffff;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 10px;
+    margin-right: 50px;
+  }
+  
+  .buy-now:hover {
+    background-image: linear-gradient(45deg, #03E1FF, #DC1FFF);
+    color: #ffffff;
+    border: 2px solid #fff;
+  }
+
+  
+  main {
+    flex: 1 0 auto;
+    padding: 2rem;
+  }
+
+  h1 {
+    font-family: 'Bangers', cursive;
+    font-size: 10rem;
+  }
+
+  h2 {
+    font-family: 'Darumadrop One', cursive;
+    font-size: 7rem;
+  }
+
+
+  /* Navigation responsiveness */
+
+  @media (max-width: 1600px) {
+    nav {
+      flex-wrap: wrap;
+      width: 100%;
+      justify-content: center;
+      margin-top: 1rem;
+      margin-left: 0;
+    }
+  }
+
+/* Media query for mobile screens */
+@media (max-width: 767px) {
+  header {
+    flex-wrap: wrap;
+    padding: 0.5rem;
+  }
+
+  .logo-container {
+    flex: 1 0 100%;
+    justify-content: center;
+    margin-bottom: 1rem;
+  }
+
+  .logo {
+    max-width: 100px;
+    max-height: 100px;
+  }
+
+  .logo-text {
+    font-size: 3rem;
+  }
+
+  nav {
+    font-size: 1.5rem;
+    margin-left: 0;
+  }
+
+  .buy-now {
+    font-size: 1.5rem;
+    padding: 0.25rem 0.5rem;
+  }
+}
+
+/* Media query for tablet screens */
+@media (min-width: 768px) and (max-width: 991px) {
+  header {
+    padding: 0.75rem;
+  }
+
+  .logo {
+    max-width: 120px;
+    max-height: 120px;
+  }
+
+  .logo-text {
+    font-size: 4rem;
+  }
+
+  nav {
+    font-size: 1.8rem;
+  }
+
+  .buy-now {
+    font-size: 1.5rem;
+    padding: 0.25rem 0.5rem;
+  }
+}
+
+/* ... */
+/* ... */
+/* ... */
+/* ... */
+/* ... */
+/* ... */
+/* ... */
+
+  #about {
+    padding: 2rem;
+    margin-bottom: 100px;
+    margin-top: -50px;
+  }
+  
+  .about-content {
+    color:#000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 150px;
+  }
+  
+  .about-image {
+    margin-top: 0px;
+    max-width: 500px;
+    max-height: 500px;
+    border-radius: 10px;
+  }
+  
+  .about-text {
+    font-family: 'Darumadrop One', cursive;
+    text-align: left;
+    font-size: 2rem;
+  }
+
+  #about h2 {
+    margin-bottom: 0px;
+    margin-top: -10px;
+    line-height: 110px;
+  }
+
+  /* Media query for mobile screens */
+@media (max-width: 767px) {
+  /* ... */
+
+  #about {
+    margin-top: 0;
+  }
+
+  .about-content {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .about-text {
+    text-align: center;
+  }
+
+  #about h2 {
+    font-size: 4rem;
+    margin-bottom: 15px;
+    margin-top: 0px;
+    line-height: 50px;
+  }
+
+  #about p {
+    font-size: 1.5rem;
+  }
+
+  .about-image {
+    max-width: 100%;
+    max-height: auto;
+    margin-bottom: 50px;
+  }
+}
+
+/* Media query for tablet screens */
+@media (min-width: 768px) and (max-width: 991px) {
+  /* ... */
+
+  #about h2 {
+    font-size: 5rem;
+    line-height: 75px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+  }
+
+  #about p {
+    font-size: 1.8rem;
+  }
+
+  .about-image {
+    max-width: 70%;
+    max-height: auto;
+  }
+}
+
+/* ... */
+/* ... */
+/* ... */
+
+  #how-to-buy {
+    background-image: linear-gradient(#03E1FF, #DC1FFF);
+    background-size: cover;
+    background-position: center;
+    padding: 2rem;
+    text-align: center;
+    border-radius: 20px;
+    color: #ffffff;
+  }
+  
+  .accordion {
+    max-width: 600px;
+    margin: 0 auto;
+    margin-bottom: 8%;
+  }
+  
+  .accordion-item {
+    background-color: rgba(0, 0, 0, 0);
+    margin-bottom: 10px;
+  }
+  
+  .accordion-button {
+    background-image: linear-gradient(45deg, #03E1FF, #DC1FFF);
+    border: 5px solid #fff;
+    color: #fff;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    width: 100%;
+    text-align: center;    
+    outline: none;
+    font-family: 'Bangers', cursive;
+    font-size: 3rem;
+    transition: 0.4s;
+    margin-bottom: 0;
+  }
+  
+  .accordion-button:hover {
+    border: 5px solid #fff;
+    background-image: linear-gradient(45deg, #03E1FF, #DC1FFF);
+    color: #fff;
+  }
+
+  .accordion-button.active {
+    border: 5px solid #fff;
+    background-image: linear-gradient(45deg, #03E1FF, #DC1FFF);
+  }
+  .accordion-button.active:hover {
+    border: 5px solid #fff;
+    background-image: linear-gradient(45deg, #03E1FF, #DC1FFF);
+    color: #fff;
+  }
+
+  
+  .accordion-content {
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+    padding: 0 2rem;
+    text-align: left;
+    overflow: hidden;
+  }
+
+  #how-to-buy p {
+    font-family: 'Darumadrop One', cursive;
+    font-size: 2rem;
+    color: #fff;
+  }
+
+  /* Media query for mobile screens */
+@media (max-width: 767px) {
+  /* ... */
+
+  #how-to-buy h2 {
+    font-size: 4rem;
+  }
+
+  .accordion {
+    max-width: 100%;
+  }
+
+  .accordion-button {
+    font-size: 2rem;
+  }
+
+  #how-to-buy p {
+    font-size: 1.5rem;
+  }
+}
+
+/* Media query for tablet screens */
+@media (min-width: 768px) and (max-width: 991px) {
+  /* ... */
+
+  #how-to-buy h2 {
+    font-size: 5rem;
+  }
+
+  .accordion {
+    max-width: 80%;
+  }
+
+  .accordion-button {
+    font-size: 2.5rem;
+  }
+
+  #how-to-buy p {
+    font-size: 1.8rem;
+  }
+}
+
+
+/* ... */
+/* ... */
+/* ... */
+  /* ... */
+
+
+  @media (max-width: 1600px) {
+    #tokenomics h3 {
+      font-size: 1rem;
+    }
+  }
+
+#tokenomics {
+  padding: 2rem;
+  text-align: center;
+}
+
+#tokenomics h2 {
+  color: #000;
+}
+
+#tokenomics h3 {
+  font-size: 3rem;
+}
+
+.tokenomics-content {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.tokenomics-text {
+  text-align: right;
+  padding-right: 5%;
+  font-family: 'Darumadrop One', cursive;
+  color: #000;
+}
+
+.tokenomics-video {
+  width: 400px;
+  height: 400px;
+  margin-right: 15%;
+}
+
+.contract-address {
+  margin-top: -40px;
+}
+
+/* Media query for mobile screens */
+@media (max-width: 767px) {
+  /* ... */
+
+  .tokenomics-content {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .tokenomics-text {
+    text-align: center;
+    padding-right: 0;
+  }
+
+  #tokenomics h2 {
+    font-size: 4rem;
+  }
+
+  #tokenomics h3 {
+    font-size: 2.5rem;
+  }
+
+  .tokenomics-video {
+    max-width: 100%;
+    max-height: auto;
+  }
+}
+
+/* Media query for tablet screens */
+@media (min-width: 768px) and (max-width: 991px) {
+  /* ... */
+
+  .tokenomics-content {
+    gap: 1rem;
+  }
+
+  #tokenomics h2 {
+    font-size: 5rem;
+  }
+
+  #tokenomics h3 {
+    font-size: 3rem;
+  }
+
+  .tokenomics-video {
+    max-width: 90%;
+    max-height: auto;
+  }
+}
+
+/* ... */
+
+footer h3 {
+  font-size: 2.5rem;
+}
+  
+footer p {
+  font-family: 'Darumadrop One', cursive;
+  font-size: 1.5rem;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+footer h2 {
+  margin-bottom: 20px;
+}
+
+  footer {
+    flex-shrink: 0;
+    background-image: linear-gradient(#fafafa, #000000);
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+    margin-top: 100px;
+    padding-bottom: 50px;
+  }
+
+  /* ... */
+   /* ... */
+    /* ... */
+     /* Social Links */
+
+
+
+.twitter-link {
+  display: inline-block;
+  margin-top: 1rem;
+  color: #fff;
+  text-decoration: none;
+}
+
+.twitter-logo {
+  fill: #fff;
+  transition: 0.3s;
+}
+
+.twitter-link:hover .twitter-logo {
+  fill: #1DA1F2;
+}
+
+/* ... */
+
+/* ... */
+
+.discord-link {
+  display: inline-block;
+  margin-top: 1rem;
+  margin-left: 1rem;
+  text-decoration: none;
+}
+
+.discord-logo {
+  width: 55px;
+  transition: 0.3s;
+  filter: brightness(0) invert(1);
+}
+
+.discord-link:hover .discord-logo {
+  filter: brightness(1) invert(0);
+}
+
+/* ... */
+
+
