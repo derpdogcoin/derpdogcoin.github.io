@@ -633,6 +633,36 @@ footer h2 {
   filter: brightness(1) invert(0);
 }
 
+/* Footer for mobile screens */
+@media (max-width: 767px) {
+  /* ... */
+
+  footer {
+    flex-shrink: 0;
+    background-image: linear-gradient(#fafafa, #000000);
+    color: #fff;
+    padding: 0rem;
+    text-align: center;
+    margin-top: 100px;
+    padding-bottom: 50px;
+  }
+
+  footer p {
+    font-family: 'Darumadrop One', cursive;
+    font-size: 1.5rem;
+    margin-left: 0%;
+    margin-right: 0%;
+  }
+
+  footer h3 {
+    font-size: 1.5rem;
+  }
+
+  footer h2 {
+    margin-bottom: 0px;
+  }
+}
+
 /* ... */
 
 
