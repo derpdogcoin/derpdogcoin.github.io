@@ -170,8 +170,9 @@ body, html {
 
   #about {
     padding: 2rem;
-    margin-bottom: 100px;
-    margin-top: -50px;
+    margin-bottom: -30px;
+    margin-top: -200px;
+    padding-left: 10%;
   }
   
   .about-content {
@@ -179,17 +180,18 @@ body, html {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 100px;
+    gap: 0px;
     max-width: 1200px;
     margin: 0 auto;
     margin-top: 150px;
   }
-  
+
+
   .about-image {
     margin-top: 0px;
-    max-width: 500px;
-    max-height: 500px;
-    border-radius: 10px;
+    width: 35rem;
+    height: 35rem;
+    margin-bottom: -2px;
   }
   
   .about-text {
@@ -198,18 +200,23 @@ body, html {
     font-size: 2rem;
   }
 
+ .about-image-alt {
+  display: none;
+ }
+
   #about h2 {
     margin-bottom: 0px;
     margin-top: -10px;
     line-height: 110px;
   }
 
+
   /* Media query for mobile screens */
 @media (max-width: 767px) {
   /* ... */
 
   #about {
-    margin-top: 0;
+    margin-top: -150px;
   }
 
   .about-content {
@@ -223,7 +230,7 @@ body, html {
 
   #about h2 {
     font-size: 4rem;
-    margin-bottom: 15px;
+    margin-bottom: 0px;
     margin-top: 0px;
     line-height: 50px;
   }
@@ -232,10 +239,17 @@ body, html {
     font-size: 1.5rem;
   }
 
+  .about-image-alt {
+    display: unset;
+    height: 20rem;
+    width: 20rem;
+    margin-top: -50px;
+    margin-bottom: -2px;
+
+  }
+
   .about-image {
-    max-width: 100%;
-    max-height: auto;
-    margin-bottom: 50px;
+    display: none;
   }
 }
 
@@ -255,8 +269,30 @@ body, html {
   }
 
   .about-image {
-    max-width: 70%;
-    max-height: auto;
+    width: 20rem;
+    height: 20rem;
+    margin-bottom: -10px;
+  }
+}
+
+/* Media query for laptop screens */
+@media (min-width: 991px) and (max-width: 1200px) {
+  /* ... */
+
+  #about h2 {
+    font-size: 5rem;
+    line-height: 75px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+  }
+
+  #about p {
+    font-size: 1.8rem;
+  }
+
+  .about-image {
+    width: 25rem;
+    height: 25rem;
   }
 }
 
@@ -416,9 +452,10 @@ body, html {
 }
 
 .tokenomics-video {
-  width: 400px;
-  height: 400px;
+  max-width: 100%;
+  max-height: auto;
   margin-right: 15%;
+  border-radius: 10px;
 }
 
 .contract-address {
@@ -448,8 +485,8 @@ body, html {
   }
 
   .tokenomics-video {
-    max-width: 100%;
-    max-height: auto;
+    border-radius: 10px;
+    margin-right: 0px;
   }
 }
 
@@ -472,6 +509,7 @@ body, html {
   .tokenomics-video {
     max-width: 90%;
     max-height: auto;
+    border-radius: 10px;
   }
 }
 
