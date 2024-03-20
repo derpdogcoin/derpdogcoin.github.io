@@ -65,6 +65,7 @@ body, html {
     text-decoration: none;
     border-radius: 10px;
     margin-right: 50px;
+    white-space: nowrap;
   }
   
   .buy-now:hover {
@@ -95,11 +96,33 @@ body, html {
   @media (max-width: 1600px) {
     nav {
       flex-wrap: wrap;
-      width: 100%;
+      width: 80%;
       justify-content: center;
       margin-top: 1rem;
       margin-left: 0;
+      
     }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+    }
+    
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .buy-now {
+      font-size: 2rem;
+      white-space: nowrap;
+    }
+  
+    .buy-now:hover {
+      background-image: linear-gradient(45deg, #03E1FF, #DC1FFF);
+      color: #ffffff;
+      border: 2px solid #fff;
+    }
+    
   }
 
 /* Media query for mobile screens */
@@ -118,25 +141,32 @@ body, html {
   .logo {
     max-width: 100px;
     max-height: 100px;
+    margin-top: 30px;
   }
 
   .logo-text {
+    margin-top: 30px;
     font-size: 3rem;
   }
 
   nav {
+    margin-left: 10%;
     font-size: 1.5rem;
-    margin-left: 0;
+    
   }
 
   .buy-now {
+    display: none;
     font-size: 1.5rem;
     padding: 0.25rem 0.5rem;
+    margin-top: 50px;
   }
 }
 
 /* Media query for tablet screens */
 @media (min-width: 768px) and (max-width: 991px) {
+  
+  
   header {
     padding: 0.75rem;
   }
@@ -151,14 +181,32 @@ body, html {
   }
 
   nav {
-    font-size: 1.8rem;
+    font-size: 1.4rem;
+  }
+
+  nav a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  nav a:hover {
+    text-decoration: underline;
   }
 
   .buy-now {
-    font-size: 1.5rem;
-    padding: 0.25rem 0.5rem;
+    font-size: 2rem;
+    white-space: nowrap;
   }
+
+  .buy-now:hover {
+    background-image: linear-gradient(45deg, #03E1FF, #DC1FFF);
+    color: #ffffff;
+    border: 2px solid #fff;
+  }
+
+
 }
+
 
 /* ... */
 /* ... */
@@ -171,7 +219,7 @@ body, html {
   #about {
     padding: 2rem;
     margin-bottom: -30px;
-    margin-top: -200px;
+    margin-top: 0px;
     padding-left: 10%;
   }
   
@@ -183,7 +231,7 @@ body, html {
     gap: 0px;
     max-width: 1200px;
     margin: 0 auto;
-    margin-top: 150px;
+    margin-top: 0px;
   }
 
 
@@ -216,12 +264,13 @@ body, html {
   /* ... */
 
   #about {
-    margin-top: -150px;
+    margin-top: 0px;
   }
 
   .about-content {
     flex-direction: column;
     gap: 1rem;
+    margin-top: 0px;
   }
 
   .about-text {
